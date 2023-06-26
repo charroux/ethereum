@@ -42,7 +42,7 @@ public class EthereumApplication implements CommandLineRunner {
 			logger.info("Client version: " + clientVersion.getWeb3ClientVersion());
 			logger.info("Block number: " + blockNumber.getBlockNumber());
 			logger.info("Gas price: " + gasPrice.getGasPrice());
-			
+
 		} catch (IOException ex) {
 			throw new RuntimeException("Error whilst sending json-rpc requests", ex);
 		}

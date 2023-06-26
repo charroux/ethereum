@@ -1,5 +1,12 @@
 # Cloud native app
 
+npm install ganache --global
+
+
+ganache
+
+
+
 <div id="user-content-toc">
   <ul>
     <li><a href="#start-the-app">1. Start the app</a>
