@@ -25,7 +25,7 @@ public class EthereumApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Web3j web3 = Web3j.build(new HttpService("http://localhost:8545"));
+		Web3j web3 = Web3j.build(new HttpService("http://localhost:7545"));
 		logger.info("Successfuly connected to Ethereum");
 
 		try {

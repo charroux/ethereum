@@ -1,18 +1,10 @@
 # Java Ethereum
 
-```
-npm install ganache --global
-```
+Lauch a Ganache node
 
-```
-ganache
-```
+Create a new workspace in order to increase the GAS limit: 
 
-```
-docker run -it ubuntu-blockchain
-```
-
-Ganache : Node local
+<img src="images/gaslimit.png">
 
 docker run --detach --publish 8545:8545 trufflesuite/ganache:latest
 
