@@ -45,11 +45,11 @@ Replace PRIVATE KEY in the following file
 ```
 SelecTrain selecTrain = SelecTrain.deploy(web3j, Credentials.create("PRIVATE KEY "), new DefaultGasProvider()).send();
 ```
-by one of the keys of the given accounts in Ganache:
+by one of the keys of the given accounts in Ganache (see the right side of the image):
 
 <img src="images/privateKey.png">
 
-Notice the displayed contract address, then replace the address in the interaction program: 
+Check the output and notice the displayed contract address, then replace the address in the interaction program: 
 
 ```
 SelecTrain selecTrain = SelecTrain.load("0x89eda8e7dd57c87de6c74a72b74483826ec4269d", web3j, Credentials.create("CONTRACT ADDRESS"), new DefaultGasProvider());
