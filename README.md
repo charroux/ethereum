@@ -41,18 +41,18 @@ See the contract Java Wrapper in build/generated/sources/web3j/java
 
 The main program for the deployment: https://github.com/charroux/ethereum/blob/main/src/main/java/com/charroux/ethereum/SmartContractDeployment.java
 
-Replace PRIVATE KEY in the following file 
+Replace PRIVATE KEY in the following line 
 ```
-SelecTrain selecTrain = SelecTrain.deploy(web3j, Credentials.create("PRIVATE KEY "), new DefaultGasProvider()).send();
+SelecTrain selecTrain = SelecTrain.deploy(web3j, Credentials.create("PRIVATE KEY"), new DefaultGasProvider()).send();
 ```
 by one of the keys of the given accounts in Ganache (see the right side of the image):
 
 <img src="images/privateKey.png">
 
-Check the output and notice the displayed contract address, then replace the address in the interaction program: 
+Check the output and notice the displayed contract address, then replace the address in the interaction program (don't forget the account private key: 
 
 ```
-SelecTrain selecTrain = SelecTrain.load("0x89eda8e7dd57c87de6c74a72b74483826ec4269d", web3j, Credentials.create("CONTRACT ADDRESS"), new DefaultGasProvider());
+SelecTrain selecTrain = SelecTrain.load("CONTRACT ADDRESS", web3j, Credentials.create("PRIVATE KEY"), new DefaultGasProvider());
 ```
 
 in https://github.com/charroux/ethereum/blob/main/src/main/java/com/charroux/ethereum/SmartContractDeployment.java
