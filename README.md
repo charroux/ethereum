@@ -1,25 +1,29 @@
 # Java Ethereum
 
+## Ganache node
+
 Lauch a Ganache node
 
 Create a new workspace in order to increase the GAS limit: 
 
 <img src="images/gaslimit.png">
 
-docker run --detach --publish 8545:8545 trufflesuite/ganache:latest
+## Project configuration
 
-https://ethereum.org/fr/developers/docs/programming-languages/java/
+Java 17 is required.
+
+Web3j as a Gradle plugin:
+
+```
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.1'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'org.web3j' version '4.10.0'
+}
+```
+
+See https://github.com/charroux/ethereum/blob/main/build.gradle
 
 
-https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html
-
-
-
-compile solodity sur remix on a le byte
-
-
-https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js
-
-
-ABI et byte code
 
