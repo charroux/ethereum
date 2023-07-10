@@ -49,7 +49,7 @@ by one of the keys of the given accounts in Ganache (see the right side of the i
 
 <img src="images/privateKey.png">
 
-Check the output and notice the displayed contract address, then replace the address in the interaction program (don't forget the account private key: 
+Launch the program, then check the output and notice the displayed contract address, then replace the address in the interaction program (don't forget the account private key: 
 
 ```
 SelecTrain selecTrain = SelecTrain.load("CONTRACT ADDRESS", web3j, Credentials.create("PRIVATE KEY"), new DefaultGasProvider());
