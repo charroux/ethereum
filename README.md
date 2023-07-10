@@ -55,7 +55,7 @@ Launch the program, then check the output and notice the displayed contract addr
 SelecTrain selecTrain = SelecTrain.load("CONTRACT ADDRESS", web3j, Credentials.create("PRIVATE KEY"), new DefaultGasProvider());
 ```
 
-in https://github.com/charroux/ethereum/blob/main/src/main/java/com/charroux/ethereum/SmartContractDeployment.java
+in https://github.com/charroux/ethereum/blob/main/src/main/java/com/charroux/ethereum/SmartContractInteraction.java
 
 Then lauch the program. 
 
